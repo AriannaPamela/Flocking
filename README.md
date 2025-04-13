@@ -49,14 +49,17 @@ Some simulations follow. In order to be able to observe the agents even when the
 Simulation with Kfor set to 0.0001 and Kvel=0.3
 
 
-![Simulation](simulations/flocking(Kf =0.001).gif)
+![Simulation](simulations/flocking(Kf=0.001).gif)
 
 Simulation with Kfor set to 0.001 and Kvel=0.3. Oscillatory behaviour may be observed before reaching the desired formation.
 
-
-![Simulation](simulations/flocking(Kf =0.01).gif)
+![Simulation](simulations/flocking(kf=0.01).gif)
 
 Simulation with Kfor set to 0.01 and Kvel=0.3. A more pronounced oscillatory behaviour may be observed.
+
+![Simulation](simulations/flocking(3).gif)
+
+Simulation with fixed camera center.
 
 
 
