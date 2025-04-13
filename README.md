@@ -42,6 +42,23 @@ The potential of each agent is therefore the sum of the two potentials described
 
 ## Simulations
 
-Some simulations follow. In order to be able to observe the agents even when they move away from the screen, the centre of the simulation screen has been fixed at the mean position of the agents. This means that it is not possible to see the agents moving at a consensus speed, as they appear stationary once the desired formation has been reached. In the last simulation, therefore, the centre of the screen has been fixed and agents can be seen moving away in formation.
+Some simulations follow. In order to be able to observe the agents even when they move away from the screen, the centre of the simulation screen has been fixed at the mean position of the agents. This means that it is not possible to see the agents moving at a consensus speed, as they appear stationary once the desired formation has been reached. In the last simulation, therefore, the center of the screen has been fixed and agents can be seen moving away in formation.
+
+![Simulation](simulations/flocking(Kf=0.0001).gif)
+
+Simulation with Kfor set to 0.0001 and Kvel=0.3
+
+
+![Simulation](simulations/flocking(Kf =0.001).gif)
+
+Simulation with Kfor set to 0.001 and Kvel=0.3. Oscillatory behaviour may be observed before reaching the desired formation.
+
+
+![Simulation](simulations/flocking(Kf =0.01).gif)
+
+Simulation with Kfor set to 0.01 and Kvel=0.3. A more pronounced oscillatory behaviour may be observed.
+
+
+
 
 
