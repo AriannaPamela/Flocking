@@ -33,12 +33,13 @@ Positions and speed of agents are randomly generated at the beginning of the sim
 The two behaviors followed by the agents are modelled according to the artificial potentials method. More specifically, each agent is subject to two potentials:
 
 1. **Formation**: It is used to get the desired formation to the agents, has minima in correspondence of the desired distance between a node and its neighbor. For each agent calculated as:  
-Σ_{j ∈ 𝒩ᵢ} (1/4) · (||pᵢ - pⱼ||² − δᵢⱼ²)²  (𝒩ᵢ neighborhood of agent i, pᵢ position of agent i, pⱼ position of agent j, δᵢⱼ desired distance between i and j)
+$Σ_{j ∈ 𝒩ᵢ} \frac{1}{4}$  (||pᵢ - pⱼ||² − δᵢⱼ²)² (𝒩ᵢ neighborhood of agent i, pᵢ position of agent i, pⱼ position of agent j, δᵢⱼ desired distance between i and j)
 	
 3. **Speed**: Used to coordinate all agents at a common speed. In this case the potential used has a minimum in correspondence of the common speed and is of the type:   
-Σ_{j ∈ 𝒩ᵢ} ||vᵢ - vⱼ||²  (𝒩ᵢ neighborhood of agent i, vᵢ speed of agent i, vⱼ speed of agent j)
+$Σ_{j ∈ 𝒩ᵢ}$ ||vᵢ - vⱼ||²  (𝒩ᵢ neighborhood of agent i, vᵢ speed of agent i, vⱼ speed of agent j)
 	
-The potential of each agent is therefore the sum of the two potentials described above and its derivative turns out to be: -K_{for} * Σ_{j ∈ 𝒩ᵢ} (||pᵢ - pⱼ||² - δᵢⱼ²) * (pⱼ - pᵢ) - K_{vel} * 2 * Σ_{j ∈ 𝒩ᵢ} (vᵢ - vⱼ). The contribution of the two potentials is finally weighted by two constants (Kfor and Kvel). It is noted that the contribution of the formation component must be moderated in order not to incur oscillatory trends.
+The potential of each agent is therefore the sum of the two potentials described above and its derivative turns out to be:
+$-K_{for} * Σ_{j ∈ 𝒩ᵢ}$ (||pᵢ - pⱼ||² - δᵢⱼ²) * (pⱼ - pᵢ) - K_{vel} $Σ_{j ∈ 𝒩ᵢ}$ (vᵢ - vⱼ). The contribution of the two potentials is finally weighted by two constants (Kfor and Kvel). It is noted that the contribution of the formation component must be moderated in order not to incur oscillatory trends.
 
 Finally, at the end of each iteration, the position and speed of each agent are updated as follows: 
 
